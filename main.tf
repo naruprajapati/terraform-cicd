@@ -10,7 +10,7 @@ resource "aws_s3_bucket" "cicd_bucket" {
 }
 
 resource "aws_s3_bucket" "cicd_bucket2" {
-  bucket = var.bucket_name
+  bucket = var.bucket_name2
 
   tags = {
     Name        = "CICD-PROJECT2"
