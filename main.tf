@@ -8,3 +8,14 @@ resource "aws_s3_bucket" "cicd_bucket" {
   }
 
 }
+
+resource "aws_s3_bucket" "cicd_bucket2" {
+  bucket = var.bucket_name
+
+  tags = {
+    Name        = "CICD-PROJECT2"
+    Environment = "LAB2"
+    ManagedBY   = "Terraform"
+  }
+
+}
