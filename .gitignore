@@ -1,0 +1,28 @@
+# 1. Local execution directory (downloaded providers and modules)
+**/.terraform/*
+*.terraform.lock.hcl
+# 2. State files and backups (contain sensitive infrastructure metadata and secrets)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# 3. Variable definitions (likely to contain credentials and secrets)
+*.tfvars
+*.tfvars.json
+
+# 4. Plan outputs (can contain decrypted secrets and credentials)
+*.tfplan
+
+# 5. Local override files (user-specific configurations)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# 6. CLI configuration and credentials
+.terraformrc
+terraform.rc
+
+# 7. Crash logs
+crash.log
+crash.*.log
