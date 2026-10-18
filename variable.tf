@@ -10,3 +10,8 @@ variable "aws_region" {
   description = "Region of your bucket"
 
 }
+variable "bucket_name2" {
+  description = "Enter your globally unique name of the bucket"
+  type        = string
+  default = "naru100120019920112986"
+}
